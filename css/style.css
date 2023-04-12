@@ -1,0 +1,300 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  background-color: #19376d;
+}
+
+.header {
+  width: 100%;
+  background-color: #0b2447;
+  text-align: center;
+  padding: 1rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+header > h1 {
+  padding-bottom: 1rem;
+  color: #ffffff;
+}
+
+.titleHeader {
+  color: #ffffff;
+  padding: 0.6rem;
+  font-size: 2rem;
+}
+
+a {
+  cursor: pointer;
+}
+
+.ancor {
+  text-decoration: none;
+  color: #a5d7e8;
+  padding: 0.6rem;
+}
+
+.title {
+  padding: 0.9rem;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #afbefa;
+  font-size: 2rem;
+  text-decoration: underline #ffffff 0.06rem;
+}
+
+.subtitle {
+  padding: 0.9rem;
+  font-family: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  color: #afbefa;
+  font-size: 1.7rem;
+}
+
+.backHome {
+  margin: 1.6rem;
+  flex-direction: row;
+  text-align: right;
+  justify-content: end;
+  align-items: center;
+  padding: 0 15%;
+  justify-content: space-between;
+}
+
+.paragraphBack {
+  cursor: pointer;
+  font-family: "Montserrat";
+  text-decoration: none;
+  color: #afbefa;
+  font-size: 1rem;
+}
+
+.divPhoto {
+  display: flex;
+  padding: 0 15%;
+  justify-content: space-evenly;
+}
+
+.divPhoto:hover :not(:hover) {
+  opacity: 0.3;
+}
+
+img:hover {
+  scale: 1.1;
+}
+
+.photo {
+  width: 17.5rem;
+  height: 19.375rem;
+  margin: 1.25rem;
+  border: #afbefa solid 0.13rem;
+  border-radius: 0.9rem;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 0 15%;
+  font-size: 1.3rem;
+  color: #add8e6;
+  font-family: "Montserrat";
+}
+
+.qualities {
+  margin: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 15%;
+  font-size: 1.3rem;
+  color: #add8e6;
+  font-family: "Montserrat";
+}
+
+.message {
+  margin: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 15%;
+}
+
+.msgInspiration {
+  font-size: 1.3rem;
+  color: #add8e6;
+  font-family: "Montserrat";
+}
+
+.divMyDescription {
+  margin: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  padding: 0 15%;
+  font-size: 1.3rem;
+  color: #add8e6;
+  font-family: "Montserrat";
+}
+
+.divContact {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.socialContact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.9rem;
+}
+
+.icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #add8e6;
+}
+
+.iconBack {
+  width: 1rem;
+  height: 1rem;
+  color: #afbefa;
+}
+
+.textIcon {
+  color: #add8e6;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.divFooter {
+  font-family: "Poppins", "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #0b2447;
+  text-align: center;
+  color: #a5d7e8;
+  padding: 0.9rem;
+}
+
+@media (max-width: 430px) {
+  html {
+    width: 100%;
+  }
+
+  .titleHeader {
+    font-size: 1.5rem;
+  }
+
+  .ancor {
+    font-size: 0.8rem;
+  }
+
+  .header {
+    width: 100%;
+    padding: 0.3rem;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.3rem;
+  }
+
+  .paragraphBack {
+    font-size: 0.8rem;
+  }
+
+  .backHome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .photo {
+    width: 12rem;
+    height: 14.375rem;
+    margin: 1.3rem;
+    border: #afbefa solid 0.13rem;
+    border-radius: 0.9rem;
+  }
+
+  .iconBack,
+  .icon {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  .textIcon {
+    font-size: 0.9rem;
+  }
+
+  .divPhoto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .description,
+  .qualities,
+  .message,
+  .divMyDescription {
+    padding: 0 8%;
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  #myInspiration {
+    padding: 0 4%;
+  }
+
+  .msgInspiration {
+    font-size: 1rem;
+  }
+
+  .divContact {
+    flex-direction: column;
+  }
+
+  .socialContact {
+    padding: 0.6rem;
+  }
+
+  .paragraphFooter {
+    margin: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 580px) and (min-width: 431px) {
+  .photo {
+    width: 13rem;
+    height: 14.875rem;
+  }
+
+  .header {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 930px) {
+  .divPhoto {
+    flex-wrap: wrap;
+  }
+
+  .divContact {
+    flex-wrap: wrap;
+  }
+}
